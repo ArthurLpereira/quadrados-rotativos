@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+}
+.quadrados{
+    background-color: rgb(182, 78, 182);
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
